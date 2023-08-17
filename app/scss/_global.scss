@@ -1,0 +1,29 @@
+body {
+   height: 100vh;
+}
+/* =============================*/
+.lock{
+   overflow: hidden;
+}
+.wrapper{
+   min-height: 100%;
+   // overflow: clip;
+   display: flex;
+   flex-direction: column;
+}
+.main{
+   flex: 1 1 auto;
+   // padding-top: 100px;
+   z-index: 0;
+}
+.container{
+   // width: 1470px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+a{
+   text-decoration: none;
+}
+button{
+   border: 0;
+}
