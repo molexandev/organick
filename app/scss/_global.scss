@@ -1,5 +1,6 @@
 body {
    height: 100vh;
+   @extend %OpenSans-400;
 }
 /* =============================*/
 .lock{
@@ -17,7 +18,7 @@ body {
    z-index: 0;
 }
 .container{
-   // width: 1470px;
+   max-width: 1430px;
    padding: 0 15px;
    margin: 0 auto;
 }
