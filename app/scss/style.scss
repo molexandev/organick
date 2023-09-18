@@ -4,13 +4,145 @@
 @import 'global';
 @import 'libs';
 
-.header{
-   button{
-      @extend %btn;
+.header {
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 10;
+   // background-color: #ffe300;
+   &__wrapper {
+      margin: 15px auto;
+      max-width: 1646px;
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__content-left{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   // &__content-right{
+   //    display: flex;
+   //    justify-content: space-between;
+   //    align-items: center;
+   // }
+}
+.logo {
+   display: block;
+   width: 200px;
+   height: 56px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 150px;
+   &__img {
+      width: 200px;
+      height: 56px;
+      object-fit: contain;
    }
 }
-
-
+.menu {
+   &__list {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+   }
+   &__item {
+      position: relative;
+      margin-right: 40px;
+      @extend %Roboto-700;
+      font-size: 1.25rem;
+   }
+   &__link {
+      padding: 10px 0;
+      color: $accent;
+      transition: all .2s;
+      &:hover{
+         color: $hover;         
+      }
+   }
+   &__sublist {
+      position: absolute;
+      top: 100%;
+      padding: 15px;
+      min-width: 200px;
+      background-color: #FAFAFA;
+   }
+   &__subitem {
+      margin: 15px 10px;
+      font-size: 0.875rem;
+   }
+   &__sublink {
+      color: $accent;
+      transition: all .2s;
+      &:hover{
+         color: $hover;
+      }
+   }
+}
+body.__pc .menu__list > li:hover .menu__sublist{
+   opacity: 1;
+   visibility: visible;
+   transform: translate(0px, 10px);
+   pointer-events: all;
+}
+.user-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.search {
+   &__label {
+      margin-right: 24px;
+      display: block;
+      width: 376px;
+      height: 66px;
+      position: relative;
+   }
+   &__input {
+      width: 376px;
+      height: 66px;
+      border: none;
+      padding: 15px 82px 15px 20px;
+      border-radius: 36px;
+      background: #FAFAFA;
+      outline: none;
+   }
+   &__link {
+      position: absolute;
+      width: 57px;
+      height: 56px;
+      top: 5px;
+      right: 6px;
+   }
+   &__svg {
+      width: 56px;
+      height: 56px;
+   }
+}
+.cart {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   &__link {
+      margin-right: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__svg {
+      width: 56px;
+      height: 56px;
+   }
+   &__title {
+      color: $accent;
+      font-size: 18px;
+      @extend %OpenSans-600;
+   }
+}
 
 
 

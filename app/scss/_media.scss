@@ -1,0 +1,13 @@
+@media(min-width: 767px){
+   .menu{
+
+      &__sublist{
+         transform: translate(0px, 10%);
+         opacity: 0;
+         visibility: hidden;
+         pointer-events: none;
+         transition: all .3s;
+         padding: 10px 0;
+      }
+   }
+}
