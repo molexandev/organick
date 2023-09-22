@@ -43,3 +43,13 @@ if (isMobile.any()) {
 } else {
     document.body.classList.add("__pc");
 };
+
+const menuBtn = document.querySelector('.menu__btn')
+    if(menuBtn) {
+        const menu = document.querySelector('.menu')
+        menuBtn.addEventListener('click', function (e) {
+            document.body.classList.toggle('lock')
+            menuBtn.classList.toggle('menu__btn--active')
+            menu.classList.toggle('menu--active')
+        });
+    };
