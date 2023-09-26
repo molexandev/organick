@@ -1,4 +1,8 @@
-$(function () {});
+$(function () {
+
+
+    
+});
 
 const isMobile = {
     Android: function () {
