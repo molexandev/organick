@@ -68,3 +68,9 @@ $color-3: #EFF6F1;
    font-family: 'OpenSans-Regular', sans-serif;
    font-weight: 400;
 }
+
+%decor-title{
+   color: #68A47F;
+   @extend %Yellowtail-400;
+   font-size: 2.25rem;
+}

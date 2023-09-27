@@ -10,7 +10,7 @@
    right: 0;
    left: 0;
    z-index: 10;
-   // background-color: #ffe300;
+   background-color: #fff;
    &__wrapper {
       margin: 15px auto;
       max-width: 1646px;
@@ -69,7 +69,7 @@
       position: absolute;
       top: 100%;
       min-width: 200px;
-      background-color: transparent;
+      background-color: #d4d4d4;
    }
    &__subitem {
       margin: 15px 10px;
@@ -200,6 +200,48 @@ body.__touch .menu__list > li.__active .menu__arrow{
    }
 }
 
+// =======   TOP   =======
+.top {
+   &__background{
+      background-color: #F1EFF0;
+      background-repeat: no-repeat;
+      background-position: center right;
+      background-size: contain;
+      background-image: url(../images/top-bg.webp);
+   }
+   &__wrapper {
+      padding: 247px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+   }
+   &__decor-title {
+      @extend %decor-title;
+      margin-bottom: 8px;
+   }
+   &__title {
+      max-width: 530px;
+      margin-bottom: 23px;
+   }
+   &__btn {
+      @extend %btn;
+      background-color: $hover;
+      color: $accent;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &:hover{
+         background-color: $accent;
+         color: $hover;
+      }
+   }
+   &__btn-svg{
+      width: 19px;
+      height: 19px;
+   }
+}
 
 
 
@@ -211,4 +253,122 @@ body.__touch .menu__list > li.__active .menu__arrow{
 
 
 
+
+
+
+
+
+
+
+
+
+
+// =======   BANNER   =======
+
+
+
+// =======   FOOTER   =======
+.footer {
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 50px;
+      padding: 50px 50px 100px 50px;
+   }
+   &__contacts {
+      text-align: right;
+      max-width: 285px;
+      width: 100%;
+      h5{
+         margin-bottom: 32px;
+      }
+   }
+   &__item {
+      margin-bottom: 25px;
+   }
+   &__subtitle {
+      color: $text-color;
+      text-align: right;
+      font-size: 1.125rem;
+      line-height: 165%;
+      @extend %OpenSans-700;
+   }
+   &__link {
+      color: $text-color;
+      @extend %OpenSans-400;
+      font-size: 1.125rem;
+      line-height: 165%;
+      transition: all .2s;
+      &:hover{
+         color: $hover;
+      }
+   }
+   &__socials {
+      text-align: center;
+      padding: 0 40px;
+      border-left: 1px solid $color;
+      border-right: 1px solid $color;
+      width: 100%;
+   }
+   &__logo-box {
+      margin-bottom: 26px;
+   }
+   &__logo {
+      display: inline-block;
+      margin: 0 auto;
+   }
+   &__text {
+      margin: 0 auto;
+      max-width: 543px;
+      width: 100%;
+      margin-bottom: 50px;
+   }
+   &__socials-links {
+      display: flex;
+      justify-content: center;
+      column-gap: 15px;
+   }
+   &__socials-link {
+      display: inline-block;
+      &:hover{
+         path{
+            transition: all .5s;
+            fill: $hover;
+         }
+         circle{
+            transition: all .5s;
+            fill: $accent;
+         }
+      }
+   }
+   &__utility {
+      max-width: 285px;
+      width: 100%;
+      h5{
+         margin-bottom: 25px;
+      }
+   }
+   &__utility-link {
+      color: $text-color;
+      @extend %OpenSans-400;
+      font-size: 1.125rem;
+      line-height: 272.9%;
+      transition: all .2s;
+      &:hover{
+         color: $hover;
+      }
+   }
+}
+.footer-info {
+   border-top: 1px solid $color;
+   padding: 17px 0;
+   text-align: center;
+   color: $text-color;
+   font-size: 1.125rem;
+   @extend %OpenSans-400;
+   line-height: 165.4%; /* 29.772px */
+   span{
+      @extend %OpenSans-700;
+   }
+}
 @import 'media';
