@@ -69,14 +69,14 @@
       position: absolute;
       top: 100%;
       min-width: 200px;
-      background-color: #d4d4d4;
+      background-color: #d4d4d4;      
    }
    &__subitem {
       margin: 15px 10px;
       font-size: 0.875rem;
    }
    &__sublink {
-      color: #0073a2;
+      color: $accent;
       transition: all .2s;
       &:hover{
          color: $hover;
@@ -878,6 +878,389 @@ body.__touch .menu__list > li.__active .menu__arrow{
       width: 100%;
    }
 }
+
+
+
+
+// = = = = = = = = = = = = = = = = = = = = = = = = = 
+
+
+
+// ======= ABOUT US=======
+// ======= BABBER =======
+.banner {
+   position: relative;
+   &__bg {
+      object-fit: contain;
+   }
+   &__wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 160px;
+   }
+   &__title {
+      position: absolute;
+   }
+}
+
+// ======= CREATIVE THINGS =======
+.creative-things {
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 40px;
+      padding-bottom: 150px;
+   }
+   &__blick-image {
+      position: relative;
+      &::before{
+         content: '';
+         position: absolute;
+         bottom: -167px;
+         left: -111px;
+         width: 466px;
+         height: 466px;
+         z-index: -100;
+         background-image: url(../images/about-decor.avif);
+      }
+   }
+   &__img {
+      object-fit: contain;
+   }
+   &__info {
+      max-width: 671px;
+   }
+   &__title-decor {
+      @extend %decor-title;
+      margin-bottom: 8px;
+   }
+   &__title {
+      max-width: 500px;
+      margin-bottom: 14px;
+   }
+   &__text {   
+      margin-bottom: 30px;
+   }
+   &__text + .creative-things__text{
+      margin-bottom: 48px;
+   }
+   &__advantages {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 58px;
+   }
+   &__advantages-item {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 15px;
+   }
+   &__icon-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 56px;
+   }
+   &__icon {
+      display: block;
+      object-fit: contain
+   }
+   &__advantages-title {
+      @extend %Roboto-500;
+   }
+   &__btn {
+      @extend %btn;
+      flex-direction: row;
+   }
+}
+
+// ======= WHY CHOOSE US =======
+.why-choose-us {
+   &__wrapper {
+      background-color: $color-2;
+      max-width: 1920px;
+      padding: 190px 0;
+      margin-bottom: 177px;
+   }
+   &__top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 91px;
+   }
+   &__info {
+      max-width: 671px;
+   }
+   &__subtitle {
+      @extend %decor-title;
+      margin-bottom: 8px;
+   }
+   &__title {
+      max-width: 530px;
+      margin-bottom: 25px;
+   }
+   &__text {
+      margin-bottom: 36px;
+   }
+   &__advantages-item {
+      max-width: 486px;
+      margin-bottom: 24px;
+   }
+   &__advantages-item + .why-choose-us__advantages-item{
+      margin-bottom: 0;
+   }
+   &__advantages-unit {
+      display: inline-block;
+      padding: 29px 91px 29px 63px;
+      border-radius: 49px;
+      background: #ECECEC;
+      color: #274C5B;
+      @extend %Roboto-500;
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      position: relative;
+      &::before{
+         content: '';
+         position: absolute;
+         background-image: url(../images/why-choose-us-icon.webp);
+         width: 19px;
+         height: 19px;
+         left: 27px;
+      }
+   }
+   &__img-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__img {
+      object-fit: contain;
+   }
+   &__cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 30px;
+   }
+   &__card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 39px;
+      padding: 50px 39px 39px 35px;
+   }
+   &__card-icon-box {
+      width: 95px;
+      height: 95px;
+      background-color: $color-2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 18px;
+      margin-bottom: 15px;
+      position: relative;
+      &::after{
+         content: '';
+         position: absolute;
+         background-image: url(../images/why-choose-us__card-decor.webp);
+         width: 29px;
+         height: 29px;
+         top: 23px;
+         right: 22px;
+         z-index: 1;
+         border-radius: 50%;
+      }
+   }
+   &__card-icon {
+      position: relative;
+      z-index: 10;
+   }
+   &__card-title {
+      margin-bottom: 12px;
+   }
+   &__card-text {
+      max-width: 184px;
+      max-height: 95px;
+      overflow: hidden;
+   }
+}
+
+// ======= OUR EXPERTS =======
+.our-experts {
+   &__wrapper {
+      padding: 0 0 200px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   &__title-decor {
+      text-align: center;
+      @extend %decor-title;
+   }
+   &__title {
+      text-align: center;
+      margin-bottom: 16px;
+   }
+   &__text {
+      max-width: 852px;
+      text-align: center;
+      margin-bottom: 42px;
+   }
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 27px;
+   }
+   &__item {
+      border-radius: 30px;
+      background-color: $color-2;
+      transition: all .2s;
+      &:hover{
+         filter: drop-shadow(0px 29px 44px rgba(150, 150, 150, 0.25));
+      }
+      &:hover > .our-experts__img-link{
+         &::after{
+            background-color: #000;
+            border-radius: 30px 30px 0 0;
+            opacity: .3;
+         }
+      }
+   }
+   &__img-link{
+      &::after{
+         content: '';
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         transition: all .3s;
+         opacity: 0;
+      }
+      opacity: 1;
+      position: relative;
+   }
+   &__img {
+      border-radius: 30px 30px 0 0;
+      object-fit: contain;
+   }
+   &__info-block {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 27px 34px 30px;
+   }
+   &__name {
+      transition: all .2s;
+      margin-bottom: 2px;
+      &:hover{
+         color: $hover;
+      }
+   }
+   &__position {
+      @extend %decor-title;
+      font-size: 1.375rem;
+   }
+   &__socials {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      column-gap: 17px;
+   }
+   &__svg-link {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: all .2s;
+      &:hover{
+         background-color: $hover;
+      }
+   }
+   &__svg {
+      width: 22px;
+      height: 22px;
+   }
+}
+
+// ======= WE OFFER =======
+.we-offer {
+   &__wrapper {
+      background-color: $accent;
+      max-width: 1920px;
+      margin-bottom: 140px;
+   }
+   &__inner {
+      padding: 188px 0;
+      text-align: center;
+   }
+   &__title-decor {
+      @extend %decor-title;
+      margin-bottom: 8px;
+   }
+   &__title {
+      color: #fff;
+      margin-bottom: 33px;
+   }
+   &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+   }
+   &__item {
+      width: 334px;
+      &:hover > .we-offer__img-link{
+         &::after{
+            background-color: #000;
+            border-radius: 30px;
+            opacity: .3;
+         }
+      }
+      &:hover .we-offer__name{
+         color: $hover;
+      }
+   }
+   &__img-link {
+      border-radius: 30px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+      &::after{
+         content: '';
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         transition: all .3s;
+         opacity: 0;
+      }
+      opacity: 1;
+      position: relative;
+   }
+   &__img {
+      border-radius: 30px;
+   }
+   &__name {
+      @extend %Roboto-500;
+      color: #fff;
+      text-align: center;
+      transition: all .2s;
+   }
+}
+
+
+
 
 
 

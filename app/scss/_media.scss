@@ -1,6 +1,5 @@
 @media(min-width: 767px){
    .menu{
-
       &__sublist{
          transform: translate(0px, 10%);
          opacity: 0;
@@ -8,6 +7,7 @@
          pointer-events: none;
          transition: all .3s;
          padding: 10px 0;
+         background-color: #fff;
       }
    }
 }
@@ -133,6 +133,7 @@
          position: relative;
          flex: 1 1 100%;
          margin: 20px 0 0 0!important;
+         display: none;
       }
       &__sublink{
          font-size: 1.25rem;
