@@ -67,8 +67,8 @@
                <!---->
                <div class="user-nav">
                   <div class="search">
-                     <label class="search__label" for="#">
-                        <input type="text" class="search__input">
+                     <label class="search__label" for="search">
+                        <input type="text" class="search__input" id="search">
                         <a class="search__link" href="#">
                            <svg class="search__svg">
                               <use xlink:href="images/sprite.svg#search" width="56" height="56"></use>
@@ -217,10 +217,10 @@
          <div class="subscription__wrapper">
             <h2 class="subscription__title">Subscribe to our Newsletter</h2>
             <form class="subscription__form" action="#">
-               <label class="subscription__label" for="#">
-                  <input type="text" class="subscription__inp-text" placeholder="Your Email Address">
-                  <input type="button" class="subscription__inp-btn" value="Subscribe">
+               <label class="subscription__label" for="subscription">
+                  <input class="subscription__inp-text" id="subscription" type="text" placeholder="Your Email Address">
                </label>
+               <button class="subscription__inp-btn" type="submit">Subscribe</button>
             </form>
          </div>
       </div>

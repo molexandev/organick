@@ -682,6 +682,9 @@ body.__touch .menu__list > li.__active .menu__arrow{
 
 // ======= ORGANIC FOOD =======
 .organic-food {
+   &__title{
+      display: none;
+   }
    &__wrapper {
       display: flex;
       justify-content: space-between;
@@ -857,13 +860,14 @@ body.__touch .menu__list > li.__active .menu__arrow{
       color: #fff;
    }
    &__form{
-      width: 100%;
-   }
-   &__label {
       display: flex;
       justify-content: end;
       align-items: center;
       column-gap: 8px;
+      width: 50%;
+   }
+   &__label {
+      width: 349px;
    }
    &__inp-text {
       max-width: 349px;
@@ -1853,7 +1857,200 @@ body.__touch .menu__list > li.__active .menu__arrow{
    }
 }
 
+// ======= CONTACT US =======
+.contacts-top {
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 75px;
+      margin-bottom: 120px;
+   }
+   &__img {
+      width: 623px;
+      height: 640px;
+      border-radius: 20px;
+      object-fit: contain;
+   }
+   &__info-box {
+      max-width: 700px;
+   }
+   &__title {
+      margin-bottom: 14px;
+   }
+   &__contacts {
+      margin: 34px 0;
+      display: flex;
+      flex-direction: column;
+      row-gap: 17px;
+   }
+   &__item {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      column-gap: 19px;
+   }
+   &__icon {
+      object-fit: contain;
+   }
+   &__link {
+      color: $text-color;
+      @extend %OpenSans-400;
+      font-size: 1.125rem;
+      line-height: 165.4%;
+      transition: all .2s;
+      &:hover{
+         color: $hover;
+      } 
+   }
+	&__socials-links {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      column-gap: 15px;
+	}
+	&__socials-link {
+      &:hover{
+         path{
+            transition: all .5s;
+            fill: $hover;
+         }
+         circle{
+            transition: all .5s;
+            fill: $accent;
+         }
+      }
+	}
+}
 
+// ======= LOCATION =======
+.location {
+   &__wrapper {
+      margin-bottom: 120px;
+      position: relative;
+   }
+   &__img-bg {
+      object-fit: contain;
+   }
+   &__inner {
+      position: absolute;
+      right: 110px;
+      top: 120px;
+      bottom: 120px;
+      border-radius: 30px;
+      background: #FFF;
+      padding: 46px 53px;
+
+   }
+   &__title-decor {
+      @extend %decor-title;
+   }
+   &__title {
+      margin-bottom: 10px;
+      max-width: 408px;
+   }
+   &__text {
+      max-width: 408px;
+      margin-bottom: 19px;
+   }
+   &__itens {
+      max-width: 408px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 22px;
+   }
+   &__item {
+      position: relative;
+      padding-left: 56px;
+      color: $text-color;
+      font-size: 1.125rem;
+      line-height: 165.4%;
+      &::before{
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 50px;
+         height: 50px;
+         background-image: url(../images/location-icon.webp);
+         background-repeat: no-repeat;
+         background-position: center center;
+         background-size: contain;
+      }
+   }
+   &__item-title {
+      @extend %OpenSans-700;
+   }
+   &__item-text {      
+      @extend %OpenSans-400;
+      max-width: 230px;
+   }
+}
+
+// ======= CONTACT FORM =======
+.contact-form {
+   &__title {
+      display: none;
+   }
+   &__wrapper {
+      padding: 0 108px;
+      margin-bottom: 120px;
+   }
+   &__form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      column-gap: 46px;
+      row-gap: 50px;
+      margin-bottom: 60px;
+   }
+   &__item{
+      max-width: 569px;
+      width: 100%;
+   }
+   &__item:last-child{
+      max-width: 1184px;
+      width: 100%;
+      margin-bottom: 60px;
+   }
+   &__label {
+      display: block;
+      width: 100%;
+      margin-bottom: 26px;
+   }
+   &__input {
+      max-width: 569px;
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid $accent-2;
+      height: 80px;
+      padding: 0 23px;
+      &::placeholder{
+         color: #ABABAB;
+         font-size: 1.125rem;
+         @extend %Roboto-Italic-400;
+      }
+      &:focus-visible{
+         outline: 2px solid $accent-2;
+      }
+   }
+   &__textarea {
+      max-height: 247px;
+      height: 100%;
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid $accent-2;
+      padding: 23px;
+      margin-bottom: 60px;
+      resize: none;
+      &:focus-visible{
+         outline: 2px solid $accent-2;
+      }
+   }
+   &__btn {
+      @extend %btn;
+   }
+}
 
 
 
