@@ -1,5 +1,10 @@
 $(function () {
 
+    $(".footer__title").on("click", function () {
+        $(this).toggleClass("footer__title--active");
+        $(this).next().slideToggle();
+    });
+
 });
 
 const isMobile = {

@@ -485,6 +485,7 @@ body.__touch .menu__list > li.__active .menu__arrow{
          background-position: center;
          background-size: cover;
          background-repeat: no-repeat;
+         z-index: -100;
       }
       &::before{
          left: 0;
@@ -2052,38 +2053,40 @@ body.__touch .menu__list > li.__active .menu__arrow{
    }
 }
 
+// ======= 404 =======
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// =======   BANNER   =======
-
-
+.page-404 {
+   &__wrapper {
+      max-width: 1920px;
+      margin: 0 auto;
+      position: relative;
+   }
+   &__img {
+      object-fit: contain;
+   }
+   &__inner {
+      position: absolute;
+      right: 14%;
+      top: 25%;
+   }
+   &__num-box {
+      margin: 0 auto;
+   }
+   &__text {
+      margin-bottom: 30px;
+      background-image: url(../images/)
+   }
+   &__link {
+      @extend %btn;
+      width: 290px;
+      padding: 28px 49px;  
+   }
+   &__btn-svg {
+      width: 19px;
+      height: 19px;
+   }
+}
 
 // =======   FOOTER   =======
 .footer {
@@ -2092,6 +2095,9 @@ body.__touch .menu__list > li.__active .menu__arrow{
       justify-content: space-between;
       column-gap: 50px;
       padding: 50px 50px 100px 50px;
+   }
+   &__title{
+      pointer-events: none;
    }
    &__contacts {
       text-align: right;
