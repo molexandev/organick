@@ -11,6 +11,7 @@
       }
    }
 }
+
 @media(max-width: 1700px){
    .info{
       &__content{
@@ -19,6 +20,11 @@
       &__img-bg{
          opacity: .3;
          left: 0;
+      }
+   }
+   .organic-food{
+      &__wrapper{
+         column-gap: 30px;
       }
    }
 }
@@ -130,6 +136,17 @@
          padding-bottom: 50px;
       }
    }
+   .organic-food{
+      &__wrapper{
+         padding: 70px 0;
+         column-gap: 10px;
+      }
+      &__btn{
+         padding: 25px 55px;
+         font-size: 1.25rem;
+      }
+   }
+
 }
 @media(max-width: 1200px){
    .menu{
@@ -195,6 +212,11 @@
    .reviews{
       &__info{
          column-gap: 30px;
+      }
+   }
+   .news{
+      &__info{
+         padding: 25px 35px 30px;
       }
    }
 }
@@ -301,6 +323,27 @@
       &__title-box{
          width: 100%;
          text-align: center;
+      }
+   }
+   .news{
+      &__wrapper{
+         padding: 100px 0;
+      }
+      &__title-box{
+         max-width: 65%;
+      }
+      &__box{
+         column-gap: 20px;
+         padding-bottom: 100px;
+      }
+      &__date-box{
+         top: 10px;
+         left: 10px;
+      }
+      &__info{
+         bottom: -95px;
+         left: 20px;
+         right: 20px;
       }
    }
 }
@@ -452,6 +495,12 @@
       }
    }
    .info{
+      &__title-decor{
+         text-align: center;
+      }
+      &__title{
+         text-align: center;
+      }
       &__content{
          padding: 50px 0;
       }
@@ -479,6 +528,44 @@
       }
       &__info{
          padding: 50px 0;
+      }
+   }
+   .eco-friendly{
+      &__block{
+         margin-top: 20px;
+         margin-bottom: 30px;
+         padding: 45px;
+      }
+   }
+   .organic-food{
+      &__wrapper{
+         padding: 50px 0;
+      }
+      &__btn{
+         padding: 20px 25px;
+         font-size: 1rem;
+      }
+   }
+   .news{
+      &__wrapper{
+         padding: 50px 0;
+      }
+      &__top{
+         flex-wrap: wrap;
+         justify-content: center;
+         row-gap: 25px;
+      }
+      &__title-box{
+         max-width: 100%;
+         text-align: center;
+      }
+      &__box{
+         grid-template-columns: repeat(1, 1fr);
+         justify-items: center;
+         row-gap: 70px;
+      }
+      &__info{
+         bottom: 0;
       }
    }
 }
@@ -538,6 +625,12 @@
          column-gap: 10px;
       }
    }
+   .eco-friendly{
+      &__block{
+         margin-top: 20px;
+         padding: 30px;
+      }
+   }
 }
 @media(max-width: 550px){
    .footer{
@@ -572,8 +665,39 @@
          column-gap: 10px;
       }
    }
+   .organic-food{
+      &__wrapper{
+         padding: 50px 0;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         row-gap: 15px;
+      }
+      &__btn{
+         padding: 25px 35px;
+         font-size: 1rem;
+      }
+   }
 }
 @media(max-width: 470px){
+   h1{
+      font-size: 2.5rem;
+   }
+   h2{
+      font-size: 1.875rem;
+   }
+   h3{
+      font-size: 1.75rem;
+   }
+   h4{
+      font-size: 1.625rem;
+   }
+   h5{
+      font-size: 1.5rem;
+   }
+   h6{
+      font-size: 1.25rem;
+   }
    .menu{
       &__btn{
          margin-left: 15px;
@@ -595,6 +719,21 @@
    .top{
       &__wrapper{
         padding: 50px 0;
+      }
+   }
+   .news{
+      &__box{
+         row-gap: 150px;
+         padding-bottom: 150px;
+      }
+      &__info{
+         padding: 20px;
+         left: 5px;
+         right: 5px;
+         bottom: -100px;
+      }
+      &__link{
+         padding: 12px 17px 12px 17px;
       }
    }
 }
