@@ -893,13 +893,7 @@ body.__touch .menu__list > li.__active .menu__arrow{
    }
 }
 
-
-
-
-
 // = = = = = = = = = = = = = = = = = = = = = = = = = 
-
-
 
 // ======= ABOUT US=======
 // ======= BABBER =======
@@ -1066,15 +1060,17 @@ body.__touch .menu__list > li.__active .menu__arrow{
       align-items: center;
       flex-direction: column;
       text-align: center;
+      min-height: 100%;
+      max-width: 257px;
       background-color: #fff;
       border-radius: 39px;
-      padding: 50px 39px 39px 35px;
+      padding: 50px 25px 39px 25px;
    }
    &__card-icon-box {
       width: 95px;
       height: 95px;
       background-color: $color-2;
-      display: flex;
+      display: flex;;
       justify-content: center;
       align-items: center;
       border-radius: 18px;
@@ -1097,12 +1093,21 @@ body.__touch .menu__list > li.__active .menu__arrow{
       z-index: 10;
    }
    &__card-title {
-      margin-bottom: 12px;
+      margin-bottom: 12px;      
+      flex: 1 1 auto;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
    }
    &__card-text {
       max-width: 184px;
       max-height: 95px;
       overflow: hidden;
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
    }
 }
 
@@ -1236,7 +1241,8 @@ body.__touch .menu__list > li.__active .menu__arrow{
       column-gap: 20px;
    }
    &__item {
-      width: 334px;
+      max-width: 334px;
+      width: 100%;
       &:hover > .we-offer__img-link{
          &::after{
             background-color: #000;
@@ -1249,6 +1255,10 @@ body.__touch .menu__list > li.__active .menu__arrow{
       }
    }
    &__img-link {
+      max-width: 334px;
+      width: 100%;
+      min-height: 314px;
+      height: 100%;
       border-radius: 30px;
       background-color: #fff;
       display: flex;
@@ -1270,6 +1280,7 @@ body.__touch .menu__list > li.__active .menu__arrow{
    }
    &__img {
       border-radius: 30px;
+      object-fit: contain
    }
    &__name {
       @extend %Roboto-500;
