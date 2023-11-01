@@ -203,6 +203,7 @@ body.__touch .menu__list > li.__active .menu__arrow{
 // ======= TOP =======
 .top {
    &__background{
+      
       margin-bottom: 150px;
       background-color: #F1EFF0;
       background-repeat: no-repeat;
@@ -879,7 +880,8 @@ body.__touch .menu__list > li.__active .menu__arrow{
       border-radius: 16px;
       outline: none;
       border: none;
-      padding: 15px;     
+      padding: 15px;
+      animation-delay: .5s; 
    }
    &__inp-text[placeholder]{
       color: #ABABAB;
@@ -890,6 +892,7 @@ body.__touch .menu__list > li.__active .menu__arrow{
       @extend %btn;
       max-width: 220px;
       width: 100%;
+      animation-delay: 1s;
    }
 }
 
@@ -911,6 +914,7 @@ body.__touch .menu__list > li.__active .menu__arrow{
    }
    &__title {
       position: absolute;
+      animation-delay: .5s;
    }
 }
 
@@ -2067,8 +2071,6 @@ body.__touch .menu__list > li.__active .menu__arrow{
 }
 
 // ======= 404 =======
-
-
 .page-404 {
    &__wrapper {
       max-width: 1920px;
@@ -2086,14 +2088,21 @@ body.__touch .menu__list > li.__active .menu__arrow{
    &__num-box {
       margin: 0 auto;
    }
+   &__num-img{
+      animation-delay: .3s;
+   }
+   &__title{
+      animation-delay: .5s;
+   }
    &__text {
       margin-bottom: 30px;
-      background-image: url(../images/)
+      animation-delay: .7s;
    }
    &__link {
       @extend %btn;
       width: 290px;
       padding: 28px 49px;  
+      animation-delay: 1s;
    }
    &__btn-svg {
       width: 19px;

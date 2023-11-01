@@ -105,11 +105,11 @@ const menuBtn = document.querySelector('.menu__btn')
 
     // WOW
 
-    // wow = new WOW({
-    //     boxClass: "wow",
-    //     animateClass: "animate__animated",
-    //     offset: 0,
-    //     mobile: true,
-    //     live: true,
-    // });
-    // wow.init();
+    wow = new WOW({
+        boxClass: "wow",
+        animateClass: "animate__animated",
+        offset: 0,
+        mobile: true,
+        live: true,
+    });
+    wow.init();
