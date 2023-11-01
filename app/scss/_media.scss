@@ -168,6 +168,11 @@
          bottom: 70px;
       }
    }
+   .our-experts{
+      &__wrapper{
+         padding-top: 100px;
+      }
+   }
 }
 @media(max-width: 1350px){
    .logo{
@@ -975,6 +980,7 @@
    }
    .our-experts{
       &__wrapper{
+         padding-top: 30px;
          padding-bottom: 30px;
       }
       &__inner{
