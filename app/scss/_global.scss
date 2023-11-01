@@ -1,5 +1,6 @@
 body {
    height: 100vh;
+   @extend %OpenSans-400;
 }
 /* =============================*/
 .lock{
@@ -13,11 +14,11 @@ body {
 }
 .main{
    flex: 1 1 auto;
-   // padding-top: 100px;
    z-index: 0;
+   padding-top: 96px;
 }
 .container{
-   // width: 1470px;
+   max-width: 1430px;
    padding: 0 15px;
    margin: 0 auto;
 }
@@ -26,4 +27,42 @@ a{
 }
 button{
    border: 0;
+}
+h1{
+   color: $accent;
+   @extend %Roboto-900;
+   font-size: 4.375rem;
+}
+h2{
+   color: $accent;
+   @extend %Roboto-900;
+   font-size: 3.125rem;
+}
+h3{
+   color: $accent;
+   @extend %Roboto-900;
+   font-size: 2.5rem;
+}
+h4{
+   color: $accent;
+   @extend %Roboto-900;
+   font-size: 2.1875rem;
+}
+h5{
+   color: $accent;
+   @extend %Roboto-900;
+   font-size: 1.875rem;
+}
+h6{
+   color: $accent;
+   @extend %Roboto-900;
+   font-size: 1.5625rem;
+}
+p{
+   color: $text-color;
+   font-size: 1.125rem;
+   line-height: 165.4%;
+}
+.jq-ry-container{
+   padding: 0!important;
 }
