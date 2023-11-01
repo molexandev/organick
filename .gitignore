@@ -5,7 +5,7 @@
 *.sublime*
 npm-debug.*
 
-app/
+app
 dist/components
 node_modules
 package-log.json
