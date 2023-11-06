@@ -108,7 +108,7 @@ const menuBtn = document.querySelector('.menu__btn')
     wow = new WOW({
         boxClass: "wow",
         animateClass: "animate__animated",
-        offset: 0,
+        offset: 100,
         mobile: true,
         live: true,
     });
