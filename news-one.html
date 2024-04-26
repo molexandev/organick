@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
    <title>Organick</title>
    <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
    <div class="wrapper">
       <header class="header">
@@ -26,7 +24,7 @@
                         <a class="menu__link" href="about.html">About</a>
                      </li>
                      <li class="menu__item">
-                        <a class="menu__link" href="#">Pages</a>
+                        <a class="menu__link" aria-label="Read more about" href="index.html">Pages</a>
                         <span class="menu__arrow"></span>
                         <ul class="menu__sublist">
                            <li class="menu__subitem">
@@ -65,26 +63,59 @@
                </nav>
             </div>
             <button class="menu__btn" aria-label="menu"><span></span></button>
-
             <div class="header__content-right">
-               <!---->
                <div class="user-nav">
                   <div class="search">
-                     <label class="search__label" for="search">
-                        <input type="text" class="search__input" id="search">
-                        <a class="search__link" href="#">
-                           <svg class="search__svg">
-                              <use xlink:href="images/sprite.svg#search" width="56" height="56"></use>
-                           </svg>
-                           <svg class="search__mobile-svg">
-                              <use xlink:href="images/sprite.svg#search-mobile" width="22" height="22"></use>
-                           </svg>
-                        </a>
-                     </label>
-
+                     <div class="search__wrapper">
+                        <!-- <form class="search__form" action="#">
+                           <label for="search" class="search__label">
+                              <input id="search" type="text" class="search__input">
+                           </label>
+                           <button aria-label="search" class="search__link" type="submit">
+                              <svg class="search__svg">
+                                 <use xlink:href="images/sprite.svg#search" width="56" height="56"></use>
+                              </svg>
+                              <svg class="search__mobile-svg">
+                                 <use xlink:href="images/sprite.svg#search-mobile" width="22" height="22"></use>
+                              </svg>
+                           </button>
+                        </form> -->
+                        <form class="search__form" action="#">
+                           <label for="search" class="search__label"
+                              >Search:
+                              <input
+                                 id="search"
+                                 type="text"
+                                 class="search__input"
+                                 aria-label="Search"
+                                 placeholder="Search"
+                              />
+                           </label>
+                           <button
+                              aria-label="search"
+                              class="search__link"
+                              type="submit"
+                           >
+                              <svg class="search__svg">
+                                 <use
+                                    xlink:href="images/sprite.svg#search"
+                                    width="56"
+                                    height="56"
+                                 ></use>
+                              </svg>
+                              <svg class="search__mobile-svg">
+                                 <use
+                                    xlink:href="images/sprite.svg#search-mobile"
+                                    width="22"
+                                    height="22"
+                                 ></use>
+                              </svg>
+                           </button>
+                        </form>
+                     </div>
                   </div>
                   <div class="cart">
-                     <a class="cart__link" href="#">
+                     <a class="cart__link" aria-label="Read more about" href="https://molexandev.github.io/organick/index.html">
                         <svg class="cart__svg">
                            <use xlink:href="images/sprite.svg#cart-icon" width="57" height="56"></use>
                         </svg>
@@ -188,7 +219,7 @@
                </li>
                <li class="footer__item">
                   <div class="footer__subtitle">Address</div>
-                  <a class="footer__link" href="#">88 road, borklyn street, USA</a>
+                  <a class="footer__link" href="https://molexandev.github.io/organick/index.html">88 road, borklyn street, USA</a>
                </li>
             </ul>
          </div>
@@ -201,7 +232,7 @@
             <p class="footer__text">Simply dummy text of the printing and typesetting industry.
                Lorem Ipsum simply dummy text of the printing </p>
             <div class="footer__socials-links">
-               <a class="footer__socials-link" target="_blank" href="https://www.instagram.com">
+               <a class="footer__socials-link" aria-label="Read more about" target="_blank" href="https://www.instagram.com">
                   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
                      <circle cx="30" cy="30.7158" r="30" fill="#EFF6F1" />
                      <path
@@ -212,7 +243,7 @@
                         fill="#274C5B" />
                   </svg>
                </a>
-               <a class="footer__socials-link" target="_blank" href="https://www.facebook.com">
+               <a class="footer__socials-link" aria-label="Read more about" target="_blank" href="https://www.facebook.com">
                   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
                      <circle cx="30" cy="30.7158" r="30" fill="#EFF6F1" />
                      <path fill-rule="evenodd" clip-rule="evenodd"
@@ -220,7 +251,7 @@
                         fill="#274C5B" />
                   </svg>
                </a>
-               <a class="footer__socials-link" target="_blank" href="https://twitter.com">
+               <a class="footer__socials-link" aria-label="Read more about" target="_blank" href="https://twitter.com">
                   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
                      <circle cx="30" cy="30.7158" r="30" fill="#EFF6F1" />
                      <path
@@ -228,7 +259,7 @@
                         fill="#274C5B" />
                   </svg>
                </a>
-               <a class="footer__socials-link" target="_blank" href="https://ru.pinterest.com">
+               <a class="footer__socials-link" aria-label="Read more about" target="_blank" href="https://ru.pinterest.com">
                   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
                      <circle cx="30" cy="30.7158" r="30" fill="#EFF6F1" />
                      <path
@@ -242,19 +273,19 @@
             <h5 class="footer__title">Utility Pages</h5>
             <ul class="footer__utility-list">
                <li class="footer__utility-item">
-                  <a class="footer__utility-link" href="#">Style Guide</a>
+                  <a class="footer__utility-link" href="https://molexandev.github.io/organick/index.html">Style Guide</a>
                </li>
                <li class="footer__utility-item">
                   <a class="footer__utility-link" href="404.html">404 Not Found</a>
                </li>
                <li class="footer__utility-item">
-                  <a class="footer__utility-link" href="#">Password Protected</a>
+                  <a class="footer__utility-link" href="https://molexandev.github.io/organick/index.html">Password Protected</a>
                </li>
                <li class="footer__utility-item">
-                  <a class="footer__utility-link" href="#">Licences</a>
+                  <a class="footer__utility-link" href="https://molexandev.github.io/organick/index.html">Licences</a>
                </li>
                <li class="footer__utility-item">
-                  <a class="footer__utility-link" href="#">Changelog</a>
+                  <a class="footer__utility-link" href="https://molexandev.github.io/organick/index.html">Changelog</a>
                </li>
             </ul>
          </div>
@@ -267,5 +298,4 @@
 <script src="js/main.min.js"></script>
 </div>
 </body>
-
 </html>
