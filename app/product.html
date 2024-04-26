@@ -15,7 +15,7 @@
          <div class="header__wrapper">
             <div class="header__content-left">
                <a class="logo" href="index.html">
-                  <img class="logo__img" src="images/logo.webp" alt="logo image">
+                  <img class="logo__img" src="images/logo.webp" alt="logo image" width="200" height="56">
                </a>
                <nav class="menu">
                   <ul class="menu__list">
@@ -64,7 +64,7 @@
                   </ul>
                </nav>
             </div>
-            <button class="menu__btn"><span></span></button>
+            <button class="menu__btn" aria-label="menu"><span></span></button>
 
             <div class="header__content-right">
                <!---->
@@ -137,9 +137,9 @@
    <section class="products">
       <div class="container">
          <div class="products__inner">
-            <h2 class="products__title wow animate__fadeIn" data-wow-offset="300">Related Products</h2>
+            <h2 class="products__title wow animate__fadeIn">Related Products</h2>
             <div class="products__wrapper">
-               <div class="product-item wow animate__fadeIn" data-wow-offset="300">
+               <div class="product-item wow animate__fadeIn">
                   <div class="product-item__sticker">Vegetable</div>
                   <div class="product-item__img-box">
                      <a class="product-item__img-link" href="product.html">
@@ -157,7 +157,7 @@
                      </div>
                   </div>
                </div>
-               <div class="product-item wow animate__fadeIn" data-wow-offset="300">
+               <div class="product-item wow animate__fadeIn">
                   <div class="product-item__sticker">Fresh</div>
                   <div class="product-item__img-box">
                      <a class="product-item__img-link" href="product.html">
@@ -175,7 +175,7 @@
                      </div>
                   </div>
                </div>
-               <div class="product-item wow animate__fadeIn" data-wow-offset="300">
+               <div class="product-item wow animate__fadeIn">
                   <div class="product-item__sticker">Millets</div>
                   <div class="product-item__img-box">
                      <a class="product-item__img-link" href="product.html">
@@ -193,7 +193,7 @@
                      </div>
                   </div>
                </div>
-               <div class="product-item wow animate__fadeIn" data-wow-offset="300">
+               <div class="product-item wow animate__fadeIn">
                   <div class="product-item__sticker">Vegetable</div>
                   <div class="product-item__img-box">
                      <a class="product-item__img-link" href="product.html">
@@ -218,19 +218,31 @@
    <section class="subscription">
       <div class="container">
          <div class="subscription__wrapper">
-            <h2 class="subscription__title wow animate__fadeIn" data-wow-offset="300">Subscribe to our Newsletter</h2>
+            <h2 class="subscription__title wow animate__fadeIn">
+               Subscribe to our Newsletter
+            </h2>
             <form class="subscription__form" action="#">
                <label class="subscription__label" for="subscription">
-                  <input class="subscription__inp-text wow animate__fadeIn" data-wow-offset="300" id="subscription" type="text" placeholder="Your Email Address">
+                  <input
+                     class="subscription__inp-text wow animate__fadeIn"
+                     id="subscription"
+                     type="email"
+                     placeholder="Your Email Address"
+                  />
                </label>
-               <button class="subscription__inp-btn wow animate__fadeIn" data-wow-offset="300" type="submit">Subscribe</button>
+               <button
+                  class="subscription__inp-btn wow animate__fadeIn"
+                  type="submit"
+               >
+                  Subscribe
+               </button>
             </form>
          </div>
       </div>
    </section>
+   
 </main>
 <footer class="footer">
-   <!---->
    <div class="container">
       <div class="footer__wrapper">
          <div class="footer__contacts">

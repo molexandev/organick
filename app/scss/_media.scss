@@ -535,6 +535,14 @@
    %decor-title{
       font-size: 1.75rem;
    }
+   .main{
+      padding-top: 66px;
+   }
+   .header{
+      &__wrapper{
+         margin: 5px auto;
+      }
+   }
    .logo{
       min-width: 150px;
    }
@@ -772,9 +780,6 @@
          background-color: #fff;
          margin: 5px auto;
       }
-   }
-   .main{
-      padding-top: 66px;
    }
    .logo{
       margin-right:0;
